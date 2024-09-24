@@ -26,3 +26,19 @@
 
 [Прототип сайта (картинка)](prototype/web-dev-project.jpg)
 
+Список компонентов:
+- меню
+- главная
+- блок flex (h2 + p)
+- карточка About Us
+- карточка Our Services
+- карточка Latest Work
+- карточка Pricing Plan
+- карточка Our Team Member
+- статья Blog
+- форма Contact Us
+- кнопка
+- иконки фб, твиттер и тд
+
+
+

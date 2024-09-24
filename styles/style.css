@@ -26,17 +26,21 @@ body {
 
 /* Header */
 
+/* TODO: Явно не задана высота хедера(размер выставляет путем нахождения максимальной высоты внутреннего блока).
+    При большом viewport из-за того, что не установлены max-min для картинки - у headera будет слишком большая высота! */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* TODO: При установке размера от viewport на блоки необходимо задавать max-min размеры. */
 .logo img {
     width: 10vw;
     height: 10vw;
 }
 
+/* TODO: Почитай обязательно, как правильно делать меню в HTML5 */
 nav a {
     letter-spacing: 0.1rem;
     margin: 1.5vw;

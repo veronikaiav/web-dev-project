@@ -1,11 +1,47 @@
-
+/*сброс стилей */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+/* Основные стили */
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
 body {
     padding: 0 10vw;
 }
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 10vw;
+    height: 10vw;
+}
+
+nav a {
+    letter-spacing: 0.1rem;
+    margin: 1.5vw;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+}
+
 

@@ -14,10 +14,22 @@ ol {
     list-style-type: none;
 }
 
+button {
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    width: 15rem;
+    height: 5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
 /* Основные стили */
 
 html {
     font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -46,8 +58,6 @@ nav ul li {
 nav a {
     justify-content: space-between;
     align-items: center;
-    line-height: 3;
-    letter-spacing: 0.1rem;
     margin: 1.5vw;
     font-weight: bold;
     color: rgba(0, 0, 0, 1);
@@ -57,4 +67,51 @@ nav li:last-child {
     background: url(../images/search.png) no-repeat;
     background-size: 1rem;
     background-position: center;
+}
+
+/* Main Block */
+
+section.main-block {
+    height: 41vw;
+    background: rgba(0, 0, 0, 0.5) url(../images/main.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-block h1,
+.main-block p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.main-block h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.main-block p {
+    font-size: 1.2rem;
+}
+
+.main-block button {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+.main-block button:focus,
+.main-block button:hover {
+    background-color: rgb(0, 136, 122);
+    border: none;
+    outline: none;
+}
+
+.main-block img {
+    width: 3rem;
 }

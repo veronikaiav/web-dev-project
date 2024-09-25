@@ -29,8 +29,6 @@ header {
     height: 7vw;
 }
 
-/* TODO: При установке размера от viewport на блоки необходимо задавать max-min размеры. 
-    Считаю, что не стоит добавлять тк это усложняет код, картинка будет адаптивно уменьшаться и увеличиваться. */
 .logo img {
     height: 7vw;
 }
@@ -60,5 +58,3 @@ nav li:last-child {
     background-size: 1rem;
     background-position: center;
 }
-
-

@@ -14,6 +14,7 @@ ol {
     list-style-type: none;
 }
 
+/* TODO: Ты добавила стили в блок сброс стилей? Нужно переместить отсюла */
 button {
     font-family: inherit;
     background-color: transparent;
@@ -33,7 +34,7 @@ html {
 }
 
 /* Header */
-
+/* TODO: Высота блока зависит от ширины экрана. В данный момент нам это не нужно! В index.html объяснил почему */
 header {
     display: flex;
     align-items: center;
@@ -41,6 +42,7 @@ header {
     height: 7vw;
 }
 
+/* TODO: Высота блока зависит от ширины экрана. В данный момент нам это не нужно! В index.html объяснил почему */
 .logo img {
     height: 7vw;
 }
@@ -71,6 +73,7 @@ nav li:last-child {
 
 /* Main Block */
 
+/* TODO: Высота блока зависит от ширины экрана. В данный момент нам это не нужно! В index.html объяснил почему */
 section.main-block {
     height: 41vw;
     background: rgba(0, 0, 0, 0.5) url(../images/main.jpg) no-repeat center;

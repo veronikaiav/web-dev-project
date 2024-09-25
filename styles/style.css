@@ -14,7 +14,14 @@ ol {
     list-style-type: none;
 }
 
-/* TODO: Ты добавила стили в блок сброс стилей? Нужно переместить отсюла */
+/* Основные стили */
+
+html {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+}
+
 button {
     font-family: inherit;
     background-color: transparent;
@@ -25,26 +32,17 @@ button {
     cursor: pointer;
 }
 
-/* Основные стили */
-
-html {
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.1rem;
-    line-height: 1.6;
-}
-
 /* Header */
-/* TODO: Высота блока зависит от ширины экрана. В данный момент нам это не нужно! В index.html объяснил почему */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 7vw;
+    height: 10vh;
 }
 
-/* TODO: Высота блока зависит от ширины экрана. В данный момент нам это не нужно! В index.html объяснил почему */
 .logo img {
-    height: 7vw;
+    height: 10vh;
 }
 
 /* Navbar */
@@ -73,9 +71,8 @@ nav li:last-child {
 
 /* Main Block */
 
-/* TODO: Высота блока зависит от ширины экрана. В данный момент нам это не нужно! В index.html объяснил почему */
 section.main-block {
-    height: 41vw;
+    height: 90vh;
     background: rgba(0, 0, 0, 0.5) url(../images/main.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: multiply;

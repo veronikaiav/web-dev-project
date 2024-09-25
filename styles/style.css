@@ -20,32 +20,45 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
-body {
-    padding: 0 10vw;
-}
-
 /* Header */
 
-/* TODO: Явно не задана высота хедера(размер выставляет путем нахождения максимальной высоты внутреннего блока).
-    При большом viewport из-за того, что не установлены max-min для картинки - у headera будет слишком большая высота! */
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 7vw;
 }
 
-/* TODO: При установке размера от viewport на блоки необходимо задавать max-min размеры. */
+/* TODO: При установке размера от viewport на блоки необходимо задавать max-min размеры. 
+    Считаю, что не стоит добавлять тк это усложняет код, картинка будет адаптивно уменьшаться и увеличиваться. */
 .logo img {
-    width: 10vw;
-    height: 10vw;
+    height: 7vw;
 }
 
-/* TODO: Почитай обязательно, как правильно делать меню в HTML5 */
+/* Navbar */
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+}
+
 nav a {
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3;
     letter-spacing: 0.1rem;
     margin: 1.5vw;
     font-weight: bold;
     color: rgba(0, 0, 0, 1);
+}
+
+nav li:last-child {
+    background: url(../images/search.png) no-repeat;
+    background-size: 1rem;
+    background-position: center;
 }
 
 

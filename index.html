@@ -44,6 +44,13 @@
             </div>
             <a href="#about"><img src="images/arrow-down.png" /></a>
         </section>
+
+        <!-- TODO: Я не уверен на 100%, но для стилей все-таки лучше дописать класс. Там есть прикол, как исследуется дерево DOM при поиске необходимого элемента. Второй прикол — id может быть только один, поэтому принцип DRY в будущем может нарушиться (когда ты захочешь на другой элемент применить такие же стили, потому что id уникальное значение). Обычно используют классы для CSS и id для JS. Если нужна и та и та функциональность - используют и id и class атрибуты -->
+
+        <!-- TODO: Вторый момент — одинаковое наименование похожих блоков. В данный момент у тебя class "main-block", следующий блок у тебя просто id about, и что дашьше?  -->
+
+        <!-- TODO: Третий момент — принцип DRY и переиспользование классов. Я бы выделил какой-то класс в CSS base-container например и сделал в нём переиспользуемую настройку для всех блоков. Дальше для каждого блока добавлял по необходимости CSS классы для дополнительных стилей. -->
+
         <section id="about">
             <div>
                 <h2>About Us</h2>
@@ -51,7 +58,14 @@
                     industry's standard dummy text ever since the 1500s</p>
             </div>
             <div>
+                <!--
+                    TODO: Ознакомиться и понять, когда использовать section, а когда div.
+                    https://html.spec.whatwg.org/multipage/sections.html#the-section-element
+                    https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element
+                    https://stackoverflow.com/questions/6939864/what-is-the-difference-between-section-and-div
+                -->
                 <section class="about-item">
+                    <!-- TODO: Прочитать зачем нужен picture и стоит ли просто оборачивать img в picture? В остальных about-item тоже исправить, если не нужно оборачивать-->
                     <picture>
                         <img src="images/planet.png" alt="web">
                     </picture>

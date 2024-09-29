@@ -16,25 +16,23 @@
 </head>
 
 <body>
-    <header>
-        <picture class="logo">
-            <img src="images/planet.jpg" alt="Logo">
-        </picture>
+    <header class="base-container direction-row">
+        <img class="logo" src="images/planet.png" alt="Logo">
         <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Servicing">Servicing</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#Blog">Blog</a></li>
-                <li><a href="#Contact Us">Contact us</a></li>
-                <li><a href="#Search"></a></li>
+            <ul class="base-container direction-row">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#servicing">Servicing</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+                <li><a href="#search"><img class="search-img" src="images/search.png" alt="search"></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="main-block">
-            <div>
+        <section class="main-block base-container direction-column">
+            <div class="block-header">
                 <h1>Web development project</h1>
                 <p>Very suitable to support all web development projects</p>
             </div>
@@ -42,9 +40,38 @@
                 <button>OUR SERVICES</button>
                 <button>HIRE US NOW</button>
             </div>
-            <a href="#About"><img src="images/arrow-down.png"/></a>            
+            <a href="#about"><img src="images/arrow-down.png" /></a>
         </section>
-        
+
+        <section id="about" class="about-us-block base-container direction-column">
+            <div class="block-header">
+                <h2>About Us</h2>
+                <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+            </div>
+            <div class="base-container direction-row">
+                <section class="about-us-block-item base-container direction-column">
+                    <img src="images/planet.png" alt="web">
+                    <h3>Awesome Icons</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </section>
+                <section class="about-us-block-item">
+                    <img src="images/icon-transfer.png" alt="transfer">
+                    <h3>One Page</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </section>
+                <section class="about-us-block-item">
+                    <img src="images/icon-head.png" alt="head">
+                    <h3>Fully Responsive</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </section>
+            </div>
+
+        </section>
+
     </main>
     <footer>
 

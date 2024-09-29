@@ -7,6 +7,7 @@
 
 a {
     text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 ul,
@@ -18,7 +19,6 @@ ol {
 
 html {
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.1rem;
     line-height: 1.5;
     scroll-behavior: smooth;
 }
@@ -35,41 +35,54 @@ button {
     line-height: 1.6;
 }
 
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Basic container for blocks */
+
+.base-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.direction-row {
+    flex-direction: row;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.text-center {
+    margin: 0 20vw;
+}
+
 /* Header */
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     height: 10vh;
 }
 
-.logo img {
+.logo {
     height: 8vh;
 }
 
 /* Navbar */
 
-nav ul {
-    display: flex;
-}
-
 nav ul li {
     display: inline;
-}
-
-nav a {
-    justify-content: space-between;
-    align-items: center;
     margin: 1.5vw;
     font-weight: bold;
-    color: rgba(0, 0, 0, 1);
 }
 
-nav li:last-child {
-    background: url(../images/search.png) no-repeat;
-    background-size: 1rem;
-    background-position: center;
+.search-img {
+    width: 1rem;
 }
 
 /* Main Block */
@@ -79,10 +92,6 @@ section.main-block {
     background: rgba(0, 0, 0, 0.5) url(../images/main.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: multiply;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .main-block h1,
@@ -105,7 +114,6 @@ section.main-block {
     font-size: 1.2rem;
     font-weight: bold;
     border: 2px solid rgb(255, 255, 255);
-
 }
 
 .main-block button:focus,
@@ -119,76 +127,31 @@ section.main-block {
     width: 3rem;
 }
 
-/* About Us Block (block container) */
+/* About Us Block */
 
-section#about {
+.about-us-block {
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* 
-    TODO: Вообще умничка, что не боишься использовать nth-of-type.
-        Умничка, что написала комментарий.
-        Ты сделала всё правильно, но обычно для того, чтобы не усложнять CSS разметку для других разработчиков
-        (ты работаешь в команде), используют просто классы. Например: У тебя about-us-block, about-us-item и about-us-header + about-us-text (какой-нибудь). Для другого человека, который не знает код будет проще понять
-        класс .about-us-header, чем .about-us-block div:nth-of-type(1) h2.
-        
-        + Ты три раза используешь div:nth-of-type(1), даже тут можно было просто назвать его как-нибудь типа
-        about-us-first-div, но лучше не надо, переделай как я выше написал.
-*/
-
-/* Block container first div*/
-
-#about div:nth-of-type(1) {
-    text-align: center;
-}
-
-#about div:nth-of-type(1) h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
-
-#about div:nth-of-type(1) p {
-    margin: 0 20vw;
-}
-
-/* Block container second div*/
-
-#about div:nth-of-type(2) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
 /* About Us Block Item */
 
-section.about-item {
+section.about-us-block-item {
     width: 20vw;
     margin: 0 5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.about-item img {
+.about-us-block-item img {
     width: 5rem;
     margin-bottom: 2rem;
 }
 
-.about-item h3 {
+.about-us-block-item h3 {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.about-item p {
+.about-us-block-item p {
     text-align: center;
 }

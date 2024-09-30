@@ -59,6 +59,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
@@ -72,6 +73,11 @@ h3 {
 }
 
 .block-header {
+    margin: 15vh 15vw 5vh 15vw;
+}
+
+.block-content {
+    margin: 5vh 10vw 15vh 10vw;
     margin: 15vh 15vw 5vh 15vw;
 }
 
@@ -208,4 +214,23 @@ section.main-block {
 .services-block-item button:focus {
     background-color: rgb(0, 136, 122);
     color: rgb(255, 255, 255);
+}
+
+/* Latest Works Block */
+
+.filter-item {
+    width: 25vw;
+}
+
+.filter-item img {
+    width: 25vw;
+}
+
+.filter-item figcaption {
+    
+}
+
+.filter-item:focus figcaption,
+.filter-item:hover figcaption {
+    
 }

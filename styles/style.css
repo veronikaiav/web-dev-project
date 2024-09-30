@@ -58,7 +58,7 @@ h3 {
 .base-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
@@ -72,13 +72,18 @@ h3 {
 }
 
 .block-header {
-    margin: 0 15vw;
+    margin: 15vh 15vw 5vh 15vw;
+}
+
+.block-content {
+    margin: 5vh 10vw 15vh 10vw;
 }
 
 /* Header */
 
 header {
     height: 10vh;
+    margin: 0 10vw;
 }
 
 header .logo {
@@ -136,15 +141,15 @@ section.main-block {
 /* About Us Block */
 
 .about-us-block {
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(255, 255, 255);
 }
 
 /* About Us Block Item */
 
-section.about-us-block-item {
+.about-us-block-item {
     width: 20vw;
-    margin: 0 5vw;
+    margin: 0 2vw;
 }
 
 .about-us-block-item img {
@@ -152,74 +157,50 @@ section.about-us-block-item {
     margin-bottom: 2rem;
 }
 
-/* Services block */
+/* Services Block */
 
-#services {
-    height: 180vh;
-    background-color: rgb(228,253,250);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.services-block {
+    background-color: rgb(228, 253, 250);
 }
 
-#services div:nth-of-type(1) {
-    text-align: center;
-    margin: 15vh 20vw;
-}
+/* Services Block Item */
 
-#services div:nth-of-type(1) h2 {
-    margin: 2rem 0;
-    font-weight: bold;
-}
-
-#services div:nth-of-type(2) {
-    margin: 0 5vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-section.services-item {
+.services-block-item {
     background-color: rgb(255, 255, 255);
-    width: 27vw;
-    height: 60vh;
+    width: 25vw;
     padding: 2rem;
-    margin: 1% 1%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    margin: 2vh 0;
 }
 
-section.services-item:focus,
-section.services-item:hover {
+.services-block-item:focus,
+.services-block-item:hover {
     background-color: rgb(0,136,122);
     color: rgb(255, 255, 255);
 }
 
-.services-item img {
+.services-block-item img {
     width: 5rem;
     margin: 2vh 0;
 }
 
-.services-item h3,
-.services-item p {
+.services-block-item:focus img,
+.services-block-item:hover img {
+    filter: invert(1) brightness(2);
+}
+
+.services-block-item h3,
+.services-block-item p {
     margin: 2vh 0;
 }
 
-.services-item button {
+.services-block-item button {
     border: 2px solid rgb(0, 0, 0);
     font-weight: bold;
     font-size: large;
-    width: 10rem;
 }
 
-section.services-item:focus button,
-section.services-item:hover button {
+.services-block-item:focus button,
+.services-block-item:hover button {
     color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
 }

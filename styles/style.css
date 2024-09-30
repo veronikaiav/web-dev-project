@@ -183,6 +183,7 @@ section.main-block {
     margin: 2vh 0;
 }
 
+/* TODO: на Tab не работает. Исправь пожалуйста во всех местах */
 .services-block-item:focus img,
 .services-block-item:hover img {
     filter: invert(1) brightness(2);

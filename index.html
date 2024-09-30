@@ -49,6 +49,15 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s</p>
             </div>
+            <!-- TODO: Нужно стараться всегда, чтобы поряк добавления классов был от верхнего уровня, к нижнему
+                    В данный момент у нас список классов был бы base-container direction-row block-content
+                    Важно сохранить этот порядок везде!
+
+                    base-container direction-column about-us-block-item
+
+                    В мейн блоке тоже поправь.
+
+            -->
             <div class="block-content base-container direction-row">
                 <section class="about-us-block-item base-container direction-column">
                     <img src="images/planet.png" alt="web">
@@ -71,6 +80,8 @@
             </div>
         </section>
 
+        <!-- TODO: Тоже самое в порядке классов. Но вообще, в компаниях могут на такое забить,
+                но мы учимся - поэтому давай нормально -->
         <section id="servicing" class="services-block base-container direction-column">
             <div class="block-header">
                 <h2>Our Services</h2>
@@ -80,6 +91,8 @@
                 </p>
             </div>
             <div class="block-content base-container direction-row">
+                <!-- TODO: В случае добавления большого количества элементов блок едет.
+                        Нужно сделать так, чтобы не было этого. в About Us тоже самое. -->
                 <section class="services-block-item base-container direction-column">
                     <img src="images/phone_transfer_in.png" alt="phone-incoming">
                     <h3>Research</h3>

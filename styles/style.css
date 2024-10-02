@@ -18,7 +18,7 @@ ol {
 /* Основные стили */
 
 html {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 18px;
     line-height: 1.5;
     scroll-behavior: smooth;
@@ -26,14 +26,13 @@ html {
 
 button {
     font-family: inherit;
-    background-color: transparent;
-    border: none;
-    width: 15rem;
-    height: 5rem;
-    margin: 1rem;
-    cursor: pointer;
+    font-weight: bold;
     letter-spacing: 0.1rem;
     line-height: 1.6;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 h1 {
@@ -123,8 +122,10 @@ section.main-block {
 .main-block button {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
-    font-weight: bold;
     border: 2px solid rgb(255, 255, 255);
+    width: 15rem;
+    height: 5rem;
+    margin: 1rem;
 }
 
 .main-block button:focus,
@@ -174,7 +175,7 @@ section.main-block {
 
 .services-block-item:focus,
 .services-block-item:hover {
-    background-color: rgb(0,136,122);
+    background-color: rgb(0, 136, 122);
     color: rgb(255, 255, 255);
 }
 
@@ -195,8 +196,11 @@ section.main-block {
 
 .services-block-item button {
     border: 2px solid rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: large;
+    font-size: 1rem;
+    width: auto;
+    height: 8vh;
+    margin: 1rem;
+    padding: 0 1vw;
 }
 
 .services-block-item:focus button,
@@ -208,4 +212,58 @@ section.main-block {
 .services-block-item button:focus {
     background-color: rgb(0, 136, 122);
     color: rgb(255, 255, 255);
+}
+
+/* Latest Works Block */
+
+.latest-works-block button {
+    font-size: 1.1rem;
+    border: 3px solid rgb(0, 136, 122);
+    width: auto;
+    height: 8vh;
+    padding: 0 2vw;
+}
+
+.latest-works-block button:focus,
+.latest-works-block button:hover {
+    background-color: rgb(0, 136, 122);
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.filter-buttons {
+    justify-content: center;
+}
+
+.filter-buttons button {
+    margin: 10vh 0.5vw 15vh 0.5vw;
+}
+
+.filter-item {
+    position: relative;
+}
+
+.filter-item img {
+    width: 25vw;
+}
+
+.filter-item figcaption {
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* центрирование текста */
+}
+
+.filter-item:hover img {
+    filter: brightness(0.3); /* затемнение img */
+}
+
+.filter-item:hover figcaption {
+    opacity: 1;
+}
+
+button.view-all {
+    margin-bottom: 15vh;
 }

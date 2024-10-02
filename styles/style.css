@@ -267,3 +267,62 @@ section.main-block {
 button.view-all {
     margin-bottom: 15vh;
 }
+
+/* Pricing Plan Block */
+
+.pricing-plan-block {
+    background-color: rgb(240, 242, 241);
+}
+
+.pricing-plan-block-item {
+    background-color: rgb(255, 255, 255);
+    min-height: 96vh;
+    min-width: 19vw;
+    margin: 1vh 1vw;
+}
+
+.pricing-plan-block-item:hover,
+.pricing-plan-block-item:focus {
+    box-shadow: 5px 5px 15px rgb(175, 175, 175);
+}
+
+.pricing-plan-block-item-header {
+    background-color: rgb(57, 73, 171);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    color: rgb(255, 255, 255);
+    min-height: 30vh;
+    min-width: 25vw;
+}
+
+.pricing-plan-block-item-header h3 {
+    margin: 4vh 0.5vw 1vh 0.5vw;
+}
+
+span.plan-cost {
+    font-size: 3rem;
+}
+
+.pricing-plan-block-item-content li {
+    font-size: 1.1rem;
+    color: rgb(120, 120, 120);
+    border-bottom: 1px solid rgb(120, 120, 120);
+    padding: 1vh 2vw;
+    margin: 4vh;
+}
+
+.pricing-plan-block-item button {
+    font-size: 1.1rem;
+    border: 3px solid rgb(0, 0, 0);
+    width: auto;
+    height: 8vh;
+    padding: 0 2vw;
+    margin: auto;
+}
+
+.pricing-plan-block-item button:focus,
+.pricing-plan-block-item button:hover {
+    background-color: rgb(0, 136, 122);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+}

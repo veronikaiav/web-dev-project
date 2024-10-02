@@ -34,8 +34,7 @@
 
         <!-- Main Block -->
 
-        <!-- TODO: У тебя опять main-block раньше, чем base-container -->
-        <section class="main-block base-container direction-column">
+        <section class="base-container direction-column main-block">
             <div class="block-header">
                 <h1>Web development project</h1>
                 <p>Very suitable to support all web development projects</p>
@@ -142,66 +141,60 @@
                     necessitatibus doloribus aut nulla, fugiat ut deserunt iste quam eveniet veniam sit ullam placeat
                     minima!</p>
             </div>
-            <!-- TODO: Прыгают кнопки при наведении. Нужно исправить это поведение. -->
-             <!-- TODO: немного нелогично, в том плане, что у тебя есть в блоке header и content,
-              а здесь эти кнопки между ними. Но ладно, не критично -->
-            <section class="base-container direction-row filter-buttons">
-                <button>ALL</button>
-                <button>WEB DESIGN</button>
-                <button>UI/UX DESIGN</button>
-                <button>MOCKUPS</button>
-            </section>
-
-            <!-- TODO: Удалить неиспользуемый класс filter-container -->
-            <section class="base-container direction-row filter-container block-content">
-                <!-- TODO: Следи за классами! uiux, mockups, webdesign нет в css -->
-                <figure class="filter-item uiux">
-                    <img src="images/hand-watch-ui-ux-design.jpg" alt="hand watch">
-                    <figcaption>
-                        <h4>HAND WATCH</h4>
-                        <p>ui/ux design</p>
-                    </figcaption>
-                </figure>
-                <figure class="filter-item mockups">
-                    <img src="images/bottle-mockups.png" alt="bottle">
-                    <figcaption>
-                        <h4>BOTTLE</h4>
-                        <p>mockups</p>
-                    </figcaption>
-                </figure>
-                <figure class="filter-item webdesign">
-                    <img src="images/notebook-web-design.webp" alt="notebook">
-                    <figcaption>
-                        <h4>NOTEBOOK</h4>
-                        <p>web design</p>
-                    </figcaption>
-                </figure>
-                <figure class="filter-item webdesign">
-                    <img src="images/organaizer-web-design.jpg" alt="organaizer">
-                    <figcaption>
-                        <h4>ORGANAIZER</h4>
-                        <p>web design</p>
-                    </figcaption>
-                </figure>
-                <figure class="filter-item mockups">
-                    <img src="images/suit-case-mockups.jpg" alt="suit case">
-                    <figcaption>
-                        <h4>SUIT CASE</h4>
-                        <p>mockups</p>
-                    </figcaption>
-                </figure>
-                <figure class="filter-item uiux">
-                    <img src="images/tote-bag-ui-ux-design.jpg" alt="tote-bag">
-                    <figcaption>
-                        <h4>TOTE BAG</h4>
-                        <p>ui/ux design</p>
-                    </figcaption>
-                </figure>
-            </section>
+            <div class="block-content">
+                <section class="base-container direction-row filter-buttons">
+                    <button>ALL</button>
+                    <button>WEB DESIGN</button>
+                    <button>UI/UX DESIGN</button>
+                    <button>MOCKUPS</button>
+                </section>
+                <section class="base-container direction-row">
+                    <figure class="filter-item">
+                        <img src="images/hand-watch-ui-ux-design.jpg" alt="hand watch">
+                        <figcaption>
+                            <h4>HAND WATCH</h4>
+                            <p>ui/ux design</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="filter-item">
+                        <img src="images/bottle-mockups.png" alt="bottle">
+                        <figcaption>
+                            <h4>BOTTLE</h4>
+                            <p>mockups</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="filter-item">
+                        <img src="images/notebook-web-design.webp" alt="notebook">
+                        <figcaption>
+                            <h4>NOTEBOOK</h4>
+                            <p>web design</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="filter-item">
+                        <img src="images/organaizer-web-design.jpg" alt="organaizer">
+                        <figcaption>
+                            <h4>ORGANAIZER</h4>
+                            <p>web design</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="filter-item">
+                        <img src="images/suit-case-mockups.jpg" alt="suit case">
+                        <figcaption>
+                            <h4>SUIT CASE</h4>
+                            <p>mockups</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="filter-item">
+                        <img src="images/tote-bag-ui-ux-design.jpg" alt="tote-bag">
+                        <figcaption>
+                            <h4>TOTE BAG</h4>
+                            <p>ui/ux design</p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
             <button class="view-all">VIEW ALL</button>
         </section>
-
-
 
     </main>
     <footer>

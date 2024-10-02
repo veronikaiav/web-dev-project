@@ -57,8 +57,6 @@ h3 {
 .base-container {
     display: flex;
     flex-wrap: wrap;
-    /* TODO: Дублирование CSS правила */
-    justify-content: space-between;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -230,16 +228,15 @@ section.main-block {
 .latest-works-block button:hover {
     background-color: rgb(0, 136, 122);
     color: rgb(255, 255, 255);
-    border: none;
     outline: none;
 }
 
 .filter-buttons {
     justify-content: center;
 }
-/* TODO: Нет пробела после button */
-.filter-buttons button{
-    margin: 10vh 0.5vw;
+
+.filter-buttons button {
+    margin: 10vh 0.5vw 15vh 0.5vw;
 }
 
 .filter-item {

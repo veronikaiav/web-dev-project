@@ -39,7 +39,7 @@
                 <h1>Web development project</h1>
                 <p>Very suitable to support all web development projects</p>
             </div>
-            <div>
+            <div class="block-content">
                 <button>OUR SERVICES</button>
                 <button>HIRE US NOW</button>
             </div>
@@ -131,55 +131,68 @@
                 </section>
             </div>
         </section>
-        
+
         <!-- Latest Works Block -->
 
-        <section id="portfolio" class="latest-works-block base-container direction-column">
+        <section id="portfolio" class="base-container direction-column latest-works-block">
             <div class="block-header">
                 <h2>Latest Works</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa iusto voluptatum totam est a earum
                     necessitatibus doloribus aut nulla, fugiat ut deserunt iste quam eveniet veniam sit ullam placeat
                     minima!</p>
             </div>
-            <div class="block-content">
-                <div class="filter-buttons base-container direction-row">
-                    <input type="radio" name="filter" id="filter-all" checked />
-                    <label for="filter-all">ALL</label>
-                    <input type="radio" name="filter" id="filter-webdesign" />
-                    <label for="filter-webdesign">WEB DESIGN</label>
-                    <input type="radio" name="filter" id="filter-uiux" />
-                    <label for="filter-uiux">UI/UX DESIGN</label>
-                    <input type="radio" name="filter" id="filter-mockups" />
-                    <label for="filter-mockups">MOCKUPS</label>
-                </div>
-                <div class="filter-container base-container direction-row">
-                    <figure class="filter-item uiux">
-                        <img src="images/hand-watch-ui-ux-design.jpg" alt="hand watch">
-                        <figcaption>HAND WATCH ui/ux design</figcaption>
-                    </figure>
-                    <figure class="filter-item mockups">
-                        <img src="images/bottle-mockups.png" alt="bottle">
-                        <figcaption>BOTTLE mockups</figcaption>
-                    </figure>
-                    <figure class="filter-item webdesign">
-                        <img src="images/notebook-web-design.webp" alt="notebook">
-                        <figcaption>NOTEBOOK web design</figcaption>
-                    </figure>
-                    <figure class="filter-item webdesign">
-                        <img src="images/organaizer-web-design.jpg" alt="organaizer">
-                        <figcaption>ORGANAIZER web design</figcaption>
-                    </figure>
-                    <figure class="filter-item mockups">
-                        <img src="images/suit-case-mockups.jpg" alt="suit case">
-                        <figcaption>SUIT CASE mockups</figcaption>
-                    </figure>
-                    <figure class="filter-item uiux">
-                        <img src="images/tote-bag-ui-ux-design.jpg" alt="tote-bag">
-                        <figcaption>TOTE BAG ui/ux design</figcaption>
-                    </figure>
-                </div>
-                <button class="view-all">VIEW ALL</button>
-            </div>
+            <section class="base-container direction-row filter-buttons">
+                <button>ALL</button>
+                <button>WEB DESIGN</button>
+                <button>UI/UX DESIGN</button>
+                <button>MOCKUPS</button>
+            </section>
+
+            <section class="base-container direction-row filter-container block-content">
+                <figure class="filter-item uiux">
+                    <img src="images/hand-watch-ui-ux-design.jpg" alt="hand watch">
+                    <figcaption>
+                        <h4>HAND WATCH</h4>
+                        <p>ui/ux design</p>
+                    </figcaption>
+                </figure>
+                <figure class="filter-item mockups">
+                    <img src="images/bottle-mockups.png" alt="bottle">
+                    <figcaption>
+                        <h4>BOTTLE</h4>
+                        <p>mockups</p>
+                    </figcaption>
+                </figure>
+                <figure class="filter-item webdesign">
+                    <img src="images/notebook-web-design.webp" alt="notebook">
+                    <figcaption>
+                        <h4>NOTEBOOK</h4>
+                        <p>web design</p>
+                    </figcaption>
+                </figure>
+                <figure class="filter-item webdesign">
+                    <img src="images/organaizer-web-design.jpg" alt="organaizer">
+                    <figcaption>
+                        <h4>ORGANAIZER</h4>
+                        <p>web design</p>
+                    </figcaption>
+                </figure>
+                <figure class="filter-item mockups">
+                    <img src="images/suit-case-mockups.jpg" alt="suit case">
+                    <figcaption>
+                        <h4>SUIT CASE</h4>
+                        <p>mockups</p>
+                    </figcaption>
+                </figure>
+                <figure class="filter-item uiux">
+                    <img src="images/tote-bag-ui-ux-design.jpg" alt="tote-bag">
+                    <figcaption>
+                        <h4>TOTE BAG</h4>
+                        <p>ui/ux design</p>
+                    </figcaption>
+                </figure>
+            </section>
+            <button class="view-all">VIEW ALL</button>
         </section>
 
 

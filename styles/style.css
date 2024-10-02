@@ -69,7 +69,7 @@ h3 {
 .direction-column {
     flex-direction: column;
 }
-/* TODO: Backlog — обсудить необходимость использования универсальных отступов внутри контейнера. */
+
 .block-header {
     margin: 15vh 15vw 5vh 15vw;
 }
@@ -274,12 +274,10 @@ button.view-all {
     background-color: rgb(240, 242, 241);
 }
 
-/* TODO: Backlog — обсудить необходимость использования универсальных отступов внутри контейнера. */
 .pricing-plan-block-content {
     margin: 5rem 0;
 }
 
-/* TODO: Поддержки Tab нет. Добавь по аналогии с одним ищ предыдущих блоков. */
 .pricing-plan-block-item {
     background-color: rgb(255, 255, 255);
     min-height: 96vh;
@@ -289,6 +287,8 @@ button.view-all {
 
 .pricing-plan-block-item:hover,
 .pricing-plan-block-item:focus {
+    border: none;
+    outline: none;
     box-shadow: 5px 5px 15px rgb(175, 175, 175);
 }
 

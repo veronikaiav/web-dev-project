@@ -104,7 +104,7 @@ nav ul li {
 /* Main Block */
 
 section.main-block {
-    height: 90vh;
+    min-height: 90vh;
     background: rgba(0, 0, 0, 0.5) url(../images/main.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: multiply;
@@ -272,6 +272,10 @@ button.view-all {
 
 .pricing-plan-block {
     background-color: rgb(240, 242, 241);
+}
+
+.pricing-plan-block-content {
+    margin: 5rem 0;
 }
 
 .pricing-plan-block-item {

@@ -57,6 +57,7 @@ h3 {
 .base-container {
     display: flex;
     flex-wrap: wrap;
+    /* TODO: Дублирование CSS правила */
     justify-content: space-between;
     justify-content: space-between;
     align-items: center;
@@ -236,7 +237,7 @@ section.main-block {
 .filter-buttons {
     justify-content: center;
 }
-
+/* TODO: Нет пробела после button */
 .filter-buttons button{
     margin: 10vh 0.5vw;
 }

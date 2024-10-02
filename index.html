@@ -34,6 +34,7 @@
 
         <!-- Main Block -->
 
+        <!-- TODO: У тебя опять main-block раньше, чем base-container -->
         <section class="main-block base-container direction-column">
             <div class="block-header">
                 <h1>Web development project</h1>
@@ -141,6 +142,9 @@
                     necessitatibus doloribus aut nulla, fugiat ut deserunt iste quam eveniet veniam sit ullam placeat
                     minima!</p>
             </div>
+            <!-- TODO: Прыгают кнопки при наведении. Нужно исправить это поведение. -->
+             <!-- TODO: немного нелогично, в том плане, что у тебя есть в блоке header и content,
+              а здесь эти кнопки между ними. Но ладно, не критично -->
             <section class="base-container direction-row filter-buttons">
                 <button>ALL</button>
                 <button>WEB DESIGN</button>
@@ -148,7 +152,9 @@
                 <button>MOCKUPS</button>
             </section>
 
+            <!-- TODO: Удалить неиспользуемый класс filter-container -->
             <section class="base-container direction-row filter-container block-content">
+                <!-- TODO: Следи за классами! uiux, mockups, webdesign нет в css -->
                 <figure class="filter-item uiux">
                     <img src="images/hand-watch-ui-ux-design.jpg" alt="hand watch">
                     <figcaption>

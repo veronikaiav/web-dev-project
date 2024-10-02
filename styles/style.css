@@ -288,7 +288,6 @@ button.view-all {
 .pricing-plan-block-item:hover,
 .pricing-plan-block-item:focus {
     border: none;
-    outline: none;
     box-shadow: 5px 5px 15px rgb(175, 175, 175);
 }
 

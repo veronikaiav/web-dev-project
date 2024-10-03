@@ -331,3 +331,48 @@ span.plan-cost {
     border: none;
     outline: none;
 }
+
+/* Team Block */
+
+.team-block-item {
+    min-width: 15vw;
+    margin: 1vh 1vw;
+}
+
+.team-block-item-foto {
+    max-width: 23vw;
+    border-radius: 0.5vw;
+}
+
+.team-block-item-text {
+    text-align: center;
+    margin: 4vh 0;
+}
+
+.team-block-item-text h4 {
+    font-size: 1.2rem;
+}
+
+.team-block-item-text p {
+    color: rgb(120, 120, 120);
+}
+
+.team-block-item-social-icons i {
+    background-color: rgb(240, 242, 241);
+    width: 4vw;
+    min-height: 30px;
+    min-width: 30px;
+    align-content: center;
+    color: rgb(5, 137, 121);
+    font-size: 2vw;
+    border-radius: 0.5vw;
+    padding: 4% 0.5%;
+    margin: 0 0.5vw;
+}
+
+.team-block-item-social-icons i:hover,
+.team-block-item-social-icons i:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 73, 171);
+    outline: none;
+}

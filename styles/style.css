@@ -376,3 +376,48 @@ span.plan-cost {
     background-color: rgb(57, 73, 171);
     outline: none;
 }
+
+/* Blog Block */
+
+.blog-block {
+    background-color: rgb(228, 253, 250);
+}
+
+.blog-block-article {
+    align-items: start;
+    margin: 2% 0;
+}
+
+.blog-block-article-picture {
+    max-width: 48%;
+}
+
+.blog-block-article-container {
+    display: flex;
+    max-width: 48%;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+}
+
+.blog-block-article-container-header {
+    font-size: 1.5rem;
+    margin-top: 10%;
+}
+
+.blog-block-article-container-header:hover,
+.blog-block-article-container-header:focus {
+    color: rgb(5, 137, 121);
+}
+
+
+.blog-block-article-container-details,
+.blog-block-article-container-text {
+    margin-top: 3%;
+}
+
+.blog-block-article-container-details-date,
+.blog-block-article-container-details-category {
+    display: inline-block;
+    width: 20%;
+}

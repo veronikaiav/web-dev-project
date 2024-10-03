@@ -251,13 +251,15 @@ section.main-block {
     opacity: 0;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* центрирование текста */
+    transform: translate(-50%, -50%);
+    /* центрирование текста */
 }
 
 .filter-item:hover img {
-    filter: brightness(0.3); /* затемнение img */
+    filter: brightness(0.3);
+    /* затемнение img */
 }
 
 .filter-item:hover figcaption {
@@ -420,4 +422,20 @@ span.plan-cost {
 .blog-block-article-container-details-category {
     display: inline-block;
     width: 20%;
+}
+
+.blog-block-button-more {
+    font-size: 1.1rem;
+    border: 3px solid rgb(0, 136, 122);
+    width: auto;
+    height: 8vh;
+    padding: 0 2vw;
+    margin-bottom: 15vh;
+}
+
+.blog-block-button-more:focus,
+.blog-block-button-more:hover {
+    background-color: rgb(0, 136, 122);
+    color: rgb(255, 255, 255);
+    outline: none;
 }

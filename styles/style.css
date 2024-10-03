@@ -52,6 +52,13 @@ h3 {
     font-weight: bold;
 }
 
+input,
+textarea {
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: "Arial", sans-serif;
+}
+
 /* Basic container */
 
 .base-container {
@@ -412,7 +419,6 @@ span.plan-cost {
     color: rgb(5, 137, 121);
 }
 
-
 .blog-block-article-container-details,
 .blog-block-article-container-text {
     margin-top: 3%;
@@ -438,4 +444,70 @@ span.plan-cost {
     background-color: rgb(0, 136, 122);
     color: rgb(255, 255, 255);
     outline: none;
+}
+
+/* Conatact Block */
+
+.contact-block {
+    background: rgba(0, 0, 0, 0.8) url(../images/main.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+}
+
+.contact-block-details-item {
+    width: 24vw;
+}
+
+.contact-block-details-item-icon {
+    background-color: rgb(57, 73, 171);
+    font-size: 3rem;
+    align-content: center;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-block-form {
+    margin-top: 10vh;
+}
+
+.contact-us-block-form-input {
+    width: 49%;
+    height: 5rem;
+    padding: 0 1rem;
+}
+
+.contact-block-form-text {
+    width: 100%;
+    margin-top: 3vh;
+    padding: 1rem 1rem;
+    height: 20rem;
+}
+
+.contact-block-form-button {
+    background-color: rgb(255, 255, 255);
+    margin: 3vh 0 0 80%;
+    width: 20%;
+    height: 4rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.contact-block-form-button:hover,
+.contact-block-form-button:focus {
+    background-color: rgb(5, 137, 121);
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+/* Footer */
+
+footer {
+    height: 10vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

@@ -339,8 +339,7 @@ span.plan-cost {
     margin: 1vh 1vw;
 }
 
-/* TODO: FOTO? Нельзя так делать. Кирилица в коде - долбаеб на проде  */
-.team-block-item-foto {
+.team-block-item-photo {
     max-width: 23vw;
     border-radius: 0.5vw;
 }
@@ -357,7 +356,7 @@ span.plan-cost {
 .team-block-item-text p {
     color: rgb(120, 120, 120);
 }
-/* TODO: Поискать и разобраться к чему привязывать FS, border-radius */
+
 .team-block-item-social-icons i {
     background-color: rgb(240, 242, 241);
     width: 4vw;
